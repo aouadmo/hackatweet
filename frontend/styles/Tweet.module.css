@@ -1,0 +1,8 @@
+.Tweet {
+    background-color: #151D27;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+	align-items: vertical;
+	margin-bottom: 20px;
+}

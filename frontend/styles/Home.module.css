@@ -1,12 +1,31 @@
-.articlesContainer {
-    color: #151D27;
-	display: flex;
+.HomePage {
+    background-color: #151D27;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+    flex-direction: column; 
+	justify-content: center; 
+	align-items: vertical;
 	margin-bottom: 20px;
 }
 
-.sectionTitle {
-	margin-left: 25px;
+.TextBox {
+    background-color: #151D27;
+    display: flex;
 }
+
+.TweetButton {
+    background-color: #3690ED;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    aspect-ratio: 1 / 2;
+    border-radius: 100vw 100vw 100vw 100vw;
+}
+
+.tweetSection {
+    /* Styles for the Tweet component section */
+    padding: 20px;
+    flex: 1; /* Allow it to take up available space */
+  }
