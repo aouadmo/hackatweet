@@ -1,8 +1,55 @@
-.Tweet {
-    background-color: #151D27;
+.tweetHeader {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center; 
-	align-items: vertical;
-	margin-bottom: 20px;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.avatar {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 12px;
+	background-color: #ccc;
+}
+
+.userInfo {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.username {
+	color: white;
+	font-weight: bold;
+}
+
+.handle,
+.timestamp {
+	color: #657786;
+	font-size: 14px;
+}
+
+.dot {
+	margin: 0 4px;
+	color: #657786;
+}
+
+.tweetContent {
+	font-size: 16px;
+	color: white;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.hashtag {
+	color: #1da1f2;
+	cursor: pointer;
+}
+
+.tweetActions {
+	display: flex;
+	gap: 16px;
+	font-size: 14px;
+	color: #e0245e;
 }

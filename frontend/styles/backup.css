@@ -1,0 +1,107 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* Adjust the fractions to control column widths. Middle is 3 times wider than the others. */
+    grid-template-rows: auto;
+    /* Rows will size automatically based on content */
+    gap: 10px;
+    /* Optional: Add some spacing between the grid items */
+    min-height: 100vh;
+    /* Optional: Make the container take at least the full viewport height */
+    background-color: #151D27;
+}
+
+.homeSection {
+    background-color: #151D27;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: vertical;
+    margin-bottom: 20px;
+    border-bottom: #eee;
+}
+
+.TextBox {
+    background-color: #151D27;
+    display: flex;
+}
+
+.TweetButton {
+    background-color: #3690ED;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    aspect-ratio: 1 / 2;
+    border-radius: 100vw 100vw 100vw 100vw;
+}
+
+.tweetSection {
+    /* Styles for the Tweet component section */
+    margin-top: 30px; 
+    border-top: 1px solid #eee;
+    padding: 20px;
+    flex: 1;
+    /* Allow it to take up available space */
+}
+
+.signinSection {
+    /* Styles for the left column */
+    background-color: #151D27;
+    padding: 20px;
+}
+
+.mainSection {
+    /* Styles for the middle column */
+    background-color: #151D27;
+    padding: 20px;
+    display: grid;
+    /* Enable grid within the middle column for the rows */
+    grid-template-rows: auto auto auto;
+    /* Adjust based on the number of rows you expect, or use auto for dynamic rows */
+    gap: 10px;
+    /* Optional: Spacing between the rows */
+}
+
+.middleRow {
+    /* Styles for each row in the middle column */
+    background-color: #151D27;
+    padding: 15px;
+}
+
+.hashtagSection {
+    /* Styles for the right column */
+    background-color: #151D27;
+    padding: 20px;
+}
+/*
+<span>❤️</span>
+<span>🗑️</span>
+*/
+/*
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
+	value: [],
+};
+
+export const tweetsSlice = createSlice({
+	name: 'tweets',
+	initialState,
+	reducers: {
+		addTweeet: (state, action) => {
+			state.value.push(action.payload);
+		},
+		removeTweet: (state, action) => {
+			//state.value = state.value.filter(bookmark => bookmark.title !== action.payload.title);
+		},
+		removeAllTweets: (state) => {
+			state.value = [];
+		},
+	},
+});
+
+export const { addTweet, removeTweet, removeAllTweets } = tweetsSlice.actions;
+export default tweetsSlice.reducer;*/

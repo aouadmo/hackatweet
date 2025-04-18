@@ -1,0 +1,75 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0f1a25;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.loginBox {
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.loginBox h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.loginBox h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Bouton Sign Up */
+.signUpButton {
+    background-color: #1d9bf0;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.signUpButton:hover {
+    background-color: #1a8cd8;
+}
+
+/* Bouton Sign In */
+.signInButton {
+    background-color: transparent;
+    color: #1d9bf0;
+    border: 1px solid #1d9bf0;
+    border-radius: 999px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signInButton:hover {
+    background-color: #1d9bf0;
+    color: white;
+}
+
+/* you already have an account */
+.loginBox p {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
